@@ -12,11 +12,3 @@ function generatePass(pLength) {
 function populateForm(enterLength) {
     document.passGen.output.value = generatePass(enterLength);
 }
-
-function copy() {
-    var copyText = document.querySelector("#input");
-    copyText.select();
-    document.execCommand("copy");
-  }
-  
-  document.querySelector("#copy").addEventListener("click", copy);
